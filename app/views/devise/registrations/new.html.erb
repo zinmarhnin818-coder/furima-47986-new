@@ -8,6 +8,30 @@
         <%= f.label :nickname %> <em>(6 characters maximum)</em><br />
         <%= f.text_field :nickname, autofocus: true, maxlength: "6" %>
       </div>
+      <div class="field">
+        <%= f.label :last_name %><br />
+        <%= f.text_field :last_name %>
+      </div>
+
+      <div class="field">
+        <%= f.label :first_name %><br />
+        <%= f.text_field :first_name %>
+      </div>
+
+      <div class="field">
+        <%= f.label :last_name_kana %><br />
+        <%= f.text_field :last_name_kana %>
+      </div>
+
+      <div class="field">
+        <%= f.label :first_name_kana %><br />
+        <%= f.text_field :first_name_kana %>
+      </div>
+
+      <div class="field">
+        <%= f.label :birth_date %><br />
+        <%= f.date_select :birth_date, start_year: 1930, end_year: Date.today.year, use_month_numbers: true %>
+      </div>
 
       <div class="field">
         <%= f.label :email %><br />
