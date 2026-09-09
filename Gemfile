@@ -76,3 +76,4 @@ group :production do
 end
 gem 'devise'
 gem 'faker'
+gem 'active_hash'
