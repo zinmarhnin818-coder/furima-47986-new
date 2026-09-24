@@ -77,3 +77,6 @@ end
 gem 'devise'
 gem 'faker'
 gem 'active_hash'
+gem 'pry-rails'
+gem 'payjp'
+gem 'gon'
