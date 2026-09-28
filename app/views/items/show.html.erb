@@ -37,10 +37,12 @@
       </div>
     <% end %>
   <% else %>
-    <% unless @item.order.present? %>
+  <% unless @item.order.present? %>
+    <div class="item-actions">
       <%= link_to "購入画面に進む", item_orders_path(@item), data: { turbo: false }, class: "item-red-btn" %>
-    <% end %>
+    </div>
   <% end %>
+<% end %>
 <% end %>
  
 
